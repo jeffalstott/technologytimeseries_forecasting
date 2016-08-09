@@ -1,0 +1,60 @@
+---
+title: "Arma replication"
+author: "Jim Savage"
+date: "9 August 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This just tries to get the ARMA model running
+
+First, let's make sure that Jeff's code runs
+
+```{r, echo = T}
+
+resid <- rnorm(200, 0, 1)
+mu <- 0.02
+theta <- -0.5
+
+Y_diff <- NULL
+for(i in 2:200) {
+  Y_diff[i] <- mu + theta*resid[i-1] + resid[i]
+}
+
+plot.ts(Y_diff, main = "differenced Y")
+
+# Now plot Y
+plot.ts(cumsum(Y_diff[-1]), main = "log of Y")
+```
+
+Now that we have some data, let's fit Jeff's model to make 
+sure that we can recapture the known parameters $\theta = -0.5$, 
+$\mu = 0.02$ and $\sigma = 2$. 
+
+```{r, echo = T}
+
+library(rstan)
+options(mc.cores = parallel::detectCores())
+
+compiled_mod <- stan_model("models/arma_1.stan")
+
+estimated_jeffmod <- sampling(compiled_mod, data = list(T = 199, y = Y_diff[-1]))
+estimated_jeffmod
+```
+
+OK, that did a pretty bad job. Must be something with the model. 
+
+
+```{r, echo = T}
+
+library(rstan)
+options(mc.cores = parallel::detectCores())
+
+compiled_mod_jim <- stan_model("models/arma__jim.stan")
+
+estimated_jimmod <- sampling(compiled_mod_jim, data = list(T = 199, y = Y_diff[-1]))
+print(estimated_jimmod, pars = c("mu", "theta", "sigma"))
+```
