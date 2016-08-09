@@ -17,7 +17,7 @@ Data Science
 - Group parameters (this is the relationship for the Science (see below) )
 - Group level predictors? (e.g. genomics vs. chemicals vs. energy vs. …. ; price vs. non-price)
 - Box-Cox transformation?
-...
+- ...
 
 Science
 ----
