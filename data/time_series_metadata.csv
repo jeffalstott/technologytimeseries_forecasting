@@ -1,94 +1,131 @@
-Name,Units,Source,n,Start,Stop
-AcrylicFiber,1966 USD/lbs,Farmer_Lafond,13.0,1960.0,1972.0
-Acrylonitrile,1966 USD/lbs,Farmer_Lafond,14.0,1959.0,1972.0
-Aluminum,1966 USD/lbs,Farmer_Lafond,17.0,1956.0,1972.0
-Ammonia,1966 USD/lbs,Farmer_Lafond,13.0,1960.0,1972.0
-Aniline,1966 USD/lbs,Farmer_Lafond,12.0,1961.0,1972.0
-Automotive (US),Gallons/Mile,Farmer_Lafond,21.0,1985.0,2005.0
-Beer (Japan),1955 Yen,Farmer_Lafond,18.0,1951.0,1968.0
-Benzene,1958 USD,Farmer_Lafond,17.0,1952.0,1968.0
-BisphenolA,1966 USD/lbs,Farmer_Lafond,14.0,1959.0,1972.0
-Caprolactam,1966 USD/lbs,Farmer_Lafond,11.0,1962.0,1972.0
-CarbonBlack,1966 USD/lbs,Farmer_Lafond,9.0,1964.0,1972.0
-CarbonDisulfide,1966 USD/lbs,Farmer_Lafond,10.0,1963.0,1972.0
-CCGT Power,1990 USD/kW,Farmer_Lafond,10.0,1987.0,1996.0
-Concentrating Solar,US cents/kWh,Farmer_Lafond,26.0,1980.0,2005.0
-Corn (US),acres/1000 bushels,Farmer_Lafond,34.0,1975.0,2008.0
-Crude Oil,1958 USD,Farmer_Lafond,23.0,1946.0,1968.0
-Cyclohexane,1966 USD/lbs,Farmer_Lafond,17.0,1956.0,1972.0
-DNA Sequencing,2013 USD/human-size genome,Farmer_Lafond,13.0,2001.0,2013.0
-DRAM,2005 USD/thousand bits,Farmer_Lafond,37.0,1971.0,2007.0
-Electric Range,1958 USD,Farmer_Lafond,22.0,1946.0,1967.0
-Ethanol (Brazil),2002 USD/GJ,Farmer_Lafond,25.0,1980.0,2004.0
-Ethanolamine,1966 USD/lbs,Farmer_Lafond,18.0,1955.0,1972.0
-Ethylene,1966 USD/lbs,Farmer_Lafond,13.0,1960.0,1972.0
-Formaldehyde,1966 USD/lbs,Farmer_Lafond,11.0,1962.0,1972.0
-Free Standing Gas Range,1958 USD,Farmer_Lafond,22.0,1946.0,1967.0
-Geothermal Electricity,2005 US cents/kWh,Farmer_Lafond,26.0,1980.0,2005.0
-Hard Disk Drive,2005 USD/megabyte,Farmer_Lafond,20.0,1988.0,2007.0
-HydrofluoricAcid,1966 USD/lbs,Farmer_Lafond,11.0,1962.0,1972.0
-IsopropylAlcohol,1966 USD/lbs,Farmer_Lafond,9.0,1964.0,1972.0
-Laser Diode,Yen,Farmer_Lafond,13.0,1982.0,1994.0
-Low Density Polyethylene,1958 USD/pound,Farmer_Lafond,17.0,1952.0,1968.0
-Magnesium,1966 USD/lbs,Farmer_Lafond,19.0,1954.0,1972.0
-MaleicAnhydride,1966 USD/lbs,Farmer_Lafond,14.0,1959.0,1972.0
-Methanol,1966 USD/lbs,Farmer_Lafond,16.0,1957.0,1972.0
-Milk (US),Heads/Mil.lbs,Farmer_Lafond,79.0,1930.0,2008.0
-Monochrome Television,1958 USD per unit,Farmer_Lafond,22.0,1947.0,1968.0
-Motor Gasoline,1958 USD/Gallon,Farmer_Lafond,23.0,1946.0,1968.0
-NeopreneRubber,1966 USD/lbs,Farmer_Lafond,13.0,1960.0,1972.0
-Nuclear Electricity,2004 USD/Watt,Farmer_Lafond,20.0,1970.0,1989.0
-Onshore Gas Pipeline,dollar/mile-inch,Farmer_Lafond,14.0,1979.0,1992.0
-Paraxylene,1958 USD,Farmer_Lafond,12.0,1957.0,1968.0
-Pentaerythritol,1966 USD/lbs,Farmer_Lafond,21.0,1952.0,1972.0
-Phenol,1966 USD/lbs,Farmer_Lafond,14.0,1959.0,1972.0
-Photovoltaics,2013 USD/Wp,Farmer_Lafond,34.0,1980.0,2013.0
-PhthalicAnhydride,1966 USD/lbs,Farmer_Lafond,18.0,1955.0,1972.0
-PolyesterFiber,1966 USD/lbs,Farmer_Lafond,13.0,1960.0,1972.0
-PolyethyleneHD,1966 USD/lbs,Farmer_Lafond,15.0,1958.0,1972.0
-PolyethyleneLD,1966 USD/lbs,Farmer_Lafond,15.0,1958.0,1972.0
-Polypropylene,1958 USD/pound,Farmer_Lafond,10.0,1959.0,1968.0
-Polystyrene,1958 USD/pound,Farmer_Lafond,26.0,1943.0,1968.0
-Polyvinylchloride,1958 USD/pound,Farmer_Lafond,23.0,1946.0,1968.0
-Primary Aluminum,1958 USD/pound,Farmer_Lafond,40.0,1929.0,1968.0
-Primary Magnesium,1958 USD/pound,Farmer_Lafond,40.0,1929.0,1968.0
-Refined Cane Sugar,1958 USD,Farmer_Lafond,34.0,1935.0,1968.0
-Sodium,1966 USD/lbs,Farmer_Lafond,16.0,1957.0,1972.0
-SodiumChlorate,1966 USD/lbs,Farmer_Lafond,15.0,1958.0,1972.0
-SodiumHydrosulfite,1966 USD/lbs,Farmer_Lafond,9.0,1964.0,1972.0
-Sorbitol,1966 USD/lbs,Farmer_Lafond,8.0,1965.0,1972.0
-Styrene,1966 USD/lbs,Farmer_Lafond,15.0,1958.0,1972.0
-Titanium Sponge,1958 USD/lbs,Farmer_Lafond,19.0,1950.0,1968.0
-Titanium Dioxide,1966 USD/lbs,Farmer_Lafond,9.0,1964.0,1972.0
-Transistor,2005 USD,Farmer_Lafond,38.0,1968.0,2005.0
-Urea,1966 USD/lbs,Farmer_Lafond,12.0,1961.0,1972.0
-VinylAcetate,1966 USD/lbs,Farmer_Lafond,13.0,1960.0,1972.0
-VinylChloride,1966 USD/lbs,Farmer_Lafond,11.0,1962.0,1972.0
-Wind Turbine (Denmark),DKK/kW,Farmer_Lafond,20.0,1981.0,2000.0
-superconductivity_critical_temperature,deg K,Benson_Magee,15.0,1911.0,1995.0
-mechanical_computation_mips,MIPS,Benson_Magee,22.0,1891.0,1952.0
-mechanical_computation_mips_per_$,MIPS/$,Benson_Magee,22.0,1891.0,1952.0
-electronic_computation_mips,MIPS,Benson_Magee,92.0,1943.0,2004.0
-electronic_computation_mips_per_$,MIPS/Cost,Benson_Magee,80.0,1943.0,2004.0
-electricmotor_w_per_lit,W/Liter,Benson_Magee,16.0,1890.0,1995.0
-electricmotor_w_per_kg,W/kg,Benson_Magee,13.0,1881.0,1993.0
-computation_mechanical_electromech_CPS,CPS,Benson_Magee,15.0,1850.0,1948.0
-computation_electronic_CPS,CPS,Benson_Magee,29.0,1943.0,2007.0
-combustion_pass_car_piston_engine_w_per_lit,W/Liter,Benson_Magee,61.0,1931.0,2001.0
-combustion_pass_car_engine_w_per_kg,W/kg,Benson_Magee,57.0,1896.0,1994.0
-combustion_pass_car_engine_w_per_$,W/$,Benson_Magee,56.0,1896.0,1994.0
-combustion_air_turbine_engine_w_per_lit,W/lit,Benson_Magee,22.0,1955.0,2002.0
-combustion_air_turbine_engine_w_per_kg,W/kg,Benson_Magee,21.0,1963.0,2002.0
-combustion_air_turbine_engine_w_per_$,W/$,Benson_Magee,10.0,1963.0,2002.0
-combustion_air_piston_engine_w_per_lit,w/lit,Benson_Magee,45.0,1888.0,1945.0
-combustion_air_piston_engine_w_per_kg,W/kg,Benson_Magee,21.0,1919.0,1945.0
-combustion_air_piston_engine_w_per_$,W/$,Benson_Magee,13.0,1919.0,1945.0
-Wireless_Telecomunication_throughput_kbps,Throughput (Kbps),Benson_Magee,49.0,1895.0,2009.0
-Wireless_Telecomunication_spectral_efficiency_bps_per_hz,Spectral Efficiency (bps/Hz),Benson_Magee,42.0,1901.0,2009.0
-Wireless_Telecomunication_coverage_bps_per_m2,"Coverage Density (bps per Sqmts, Bandwith = 10 Mhz)",Benson_Magee,19.0,1901.0,2009.0
-Flywheel_kwh_kg,kwh/kg,Benson_Magee,8.0,1975.0,2003.0
-DC_electricity_transmission_powered_distance_wkm,"W?Km, Powered distance",Benson_Magee,23.0,1962.0,2000.0
-DC_electricity_transmission_powered_distance_per_cost_wkm_$,"W?Km/$, Powered distance per cost",Benson_Magee,20.0,1962.0,2000.0
-Artificial_Illumination_Incandescent_1000lumenhrs_per_$,1000 lumenhour/$,Benson_Magee,11.0,1883.0,1990.0
-AC_electricity_transmission_powered_distance_wkm,"W?Km, Powered distance",Benson_Magee,10.0,1889.0,1983.0
-AC_electricity_transmission_powered_distance_per_$_wkm_$,"W?Km/$, Powered distance per cost",Benson_Magee,9.0,1889.0,1983.0
+Name,Units,Source,Type,n,Start,Stop
+AcrylicFiber,1966 USD/lbs,Farmer_Lafond,Price,13.0,1960.0,1972.0
+Acrylonitrile,1966 USD/lbs,Farmer_Lafond,Price,14.0,1959.0,1972.0
+Aluminum,1966 USD/lbs,Farmer_Lafond,Price,17.0,1956.0,1972.0
+Ammonia,1966 USD/lbs,Farmer_Lafond,Price,13.0,1960.0,1972.0
+Aniline,1966 USD/lbs,Farmer_Lafond,Price,12.0,1961.0,1972.0
+Automotive (US),Gallons/Mile,Farmer_Lafond,Price,21.0,1985.0,2005.0
+Beer (Japan),1955 Yen,Farmer_Lafond,Price,18.0,1951.0,1968.0
+Benzene,1958 USD,Farmer_Lafond,Price,17.0,1952.0,1968.0
+BisphenolA,1966 USD/lbs,Farmer_Lafond,Price,14.0,1959.0,1972.0
+Caprolactam,1966 USD/lbs,Farmer_Lafond,Price,11.0,1962.0,1972.0
+CarbonBlack,1966 USD/lbs,Farmer_Lafond,Price,9.0,1964.0,1972.0
+CarbonDisulfide,1966 USD/lbs,Farmer_Lafond,Price,10.0,1963.0,1972.0
+CCGT Power,1990 USD/kW,Farmer_Lafond,Price,10.0,1987.0,1996.0
+Concentrating Solar,US cents/kWh,Farmer_Lafond,Price,26.0,1980.0,2005.0
+Corn (US),acres/1000 bushels,Farmer_Lafond,Price,34.0,1975.0,2008.0
+Crude Oil,1958 USD,Farmer_Lafond,Price,23.0,1946.0,1968.0
+Cyclohexane,1966 USD/lbs,Farmer_Lafond,Price,17.0,1956.0,1972.0
+DNA Sequencing,2013 USD/human-size genome,Farmer_Lafond,Price,13.0,2001.0,2013.0
+DRAM,2005 USD/thousand bits,Farmer_Lafond,Price,37.0,1971.0,2007.0
+Electric Range,1958 USD,Farmer_Lafond,Price,22.0,1946.0,1967.0
+Ethanol (Brazil),2002 USD/GJ,Farmer_Lafond,Price,25.0,1980.0,2004.0
+Ethanolamine,1966 USD/lbs,Farmer_Lafond,Price,18.0,1955.0,1972.0
+Ethylene,1966 USD/lbs,Farmer_Lafond,Price,13.0,1960.0,1972.0
+Formaldehyde,1966 USD/lbs,Farmer_Lafond,Price,11.0,1962.0,1972.0
+Free Standing Gas Range,1958 USD,Farmer_Lafond,Price,22.0,1946.0,1967.0
+Geothermal Electricity,2005 US cents/kWh,Farmer_Lafond,Price,26.0,1980.0,2005.0
+Hard Disk Drive,2005 USD/megabyte,Farmer_Lafond,Price,20.0,1988.0,2007.0
+HydrofluoricAcid,1966 USD/lbs,Farmer_Lafond,Price,11.0,1962.0,1972.0
+IsopropylAlcohol,1966 USD/lbs,Farmer_Lafond,Price,9.0,1964.0,1972.0
+Laser Diode,Yen,Farmer_Lafond,Price,13.0,1982.0,1994.0
+Low Density Polyethylene,1958 USD/pound,Farmer_Lafond,Price,17.0,1952.0,1968.0
+Magnesium,1966 USD/lbs,Farmer_Lafond,Price,19.0,1954.0,1972.0
+MaleicAnhydride,1966 USD/lbs,Farmer_Lafond,Price,14.0,1959.0,1972.0
+Methanol,1966 USD/lbs,Farmer_Lafond,Price,16.0,1957.0,1972.0
+Milk (US),Heads/Mil.lbs,Farmer_Lafond,Price,79.0,1930.0,2008.0
+Monochrome Television,1958 USD per unit,Farmer_Lafond,Price,22.0,1947.0,1968.0
+Motor Gasoline,1958 USD/Gallon,Farmer_Lafond,Price,23.0,1946.0,1968.0
+NeopreneRubber,1966 USD/lbs,Farmer_Lafond,Price,13.0,1960.0,1972.0
+Nuclear Electricity,2004 USD/Watt,Farmer_Lafond,Price,20.0,1970.0,1989.0
+Onshore Gas Pipeline,dollar/mile-inch,Farmer_Lafond,Price,14.0,1979.0,1992.0
+Paraxylene,1958 USD,Farmer_Lafond,Price,12.0,1957.0,1968.0
+Pentaerythritol,1966 USD/lbs,Farmer_Lafond,Price,21.0,1952.0,1972.0
+Phenol,1966 USD/lbs,Farmer_Lafond,Price,14.0,1959.0,1972.0
+Photovoltaics,2013 USD/Wp,Farmer_Lafond,Price,34.0,1980.0,2013.0
+PhthalicAnhydride,1966 USD/lbs,Farmer_Lafond,Price,18.0,1955.0,1972.0
+PolyesterFiber,1966 USD/lbs,Farmer_Lafond,Price,13.0,1960.0,1972.0
+PolyethyleneHD,1966 USD/lbs,Farmer_Lafond,Price,15.0,1958.0,1972.0
+PolyethyleneLD,1966 USD/lbs,Farmer_Lafond,Price,15.0,1958.0,1972.0
+Polypropylene,1958 USD/pound,Farmer_Lafond,Price,10.0,1959.0,1968.0
+Polystyrene,1958 USD/pound,Farmer_Lafond,Price,26.0,1943.0,1968.0
+Polyvinylchloride,1958 USD/pound,Farmer_Lafond,Price,23.0,1946.0,1968.0
+Primary Aluminum,1958 USD/pound,Farmer_Lafond,Price,40.0,1929.0,1968.0
+Primary Magnesium,1958 USD/pound,Farmer_Lafond,Price,40.0,1929.0,1968.0
+Refined Cane Sugar,1958 USD,Farmer_Lafond,Price,34.0,1935.0,1968.0
+Sodium,1966 USD/lbs,Farmer_Lafond,Price,16.0,1957.0,1972.0
+SodiumChlorate,1966 USD/lbs,Farmer_Lafond,Price,15.0,1958.0,1972.0
+SodiumHydrosulfite,1966 USD/lbs,Farmer_Lafond,Price,9.0,1964.0,1972.0
+Sorbitol,1966 USD/lbs,Farmer_Lafond,Price,8.0,1965.0,1972.0
+Styrene,1966 USD/lbs,Farmer_Lafond,Price,15.0,1958.0,1972.0
+Titanium Sponge,1958 USD/lbs,Farmer_Lafond,Price,19.0,1950.0,1968.0
+Titanium Dioxide,1966 USD/lbs,Farmer_Lafond,Price,9.0,1964.0,1972.0
+Transistor,2005 USD,Farmer_Lafond,Price,38.0,1968.0,2005.0
+Urea,1966 USD/lbs,Farmer_Lafond,Price,12.0,1961.0,1972.0
+VinylAcetate,1966 USD/lbs,Farmer_Lafond,Price,13.0,1960.0,1972.0
+VinylChloride,1966 USD/lbs,Farmer_Lafond,Price,11.0,1962.0,1972.0
+Wind Turbine (Denmark),DKK/kW,Farmer_Lafond,Price,20.0,1981.0,2000.0
+integrated_circuit_memory_transistors_per_die,#/die,Magee_et_al,Performance,20.0,1959.0,2007.0
+integrated_circuit_microprocessor_transistors_per_die, #/die,Magee_et_al,Performance,12.0,1972.0,2006.0
+02A_magnetic_memory_tape_mbits_per_$,tape mbits/$,Magee_et_al,Price,14.0,1952.0,2004.0
+02A_magnetic_memory_tape_mbits_per_cc,mbits/cc,Magee_et_al,Performance,14.0,1952.0,2004.0
+02B_magnetic_memory_harddisk_mbits_per_$,mbits/$,Magee_et_al,Price,19.0,1956.0,2004.0
+02B_magnetic_memory_harddisk_mbits_per_cc,mbit/cc,Magee_et_al,Performance,24.0,1956.0,2003.0
+02C_magnetic_memory_tape_harddisk_mbits_per_$,tape & harddisk mbits/$,Magee_et_al,Price,33.0,1952.0,2004.0
+02C_magnetic_memory_tape_harddisk_mbits_per_cc,tape & hard disk combined mbits/cc,Magee_et_al,Performance,38.0,1952.0,2004.0
+optical_memory_per_$,optical mbits/$,Magee_et_al,Price,4.0,1998.0,2004.0
+optical_memory_per_cc,Mbits/cc,Magee_et_al,Performance,16.0,1981.0,2004.0
+electrical_info_transmission_kbps_per_$,band per cost per length (kbps / Million $ / Km),Magee_et_al,Price,10.0,1858.0,1983.0
+electrical_info_transmission_kbps,bandwidth kbps,Magee_et_al,Performance,12.0,1858.0,1983.0
+optical_telcom_bandwidth_kbps_per_$_km,Band per cost per length (kbps / Million $ / Km),Magee_et_al,Price,17.0,1988.0,2002.0
+optical_telecom_bandwidth_kbps,Bandwidth kbps,Magee_et_al,Performance,17.0,1988.0,2002.0
+Wireless_Telecomunication_coverage_bps_per_m2,"Coverage Density (bps per Sqmts, Bandwith = 10 Mhz)",Magee_et_al,Performance,19.0,1901.0,2009.0
+Wireless_Telecomunication_spectral_efficiency_bps_per_hz,Spectral Efficiency (bps/Hz),Magee_et_al,Performance,42.0,1901.0,2009.0
+Wireless_Telecomunication_throughput_kbps,Throughput (Kbps),Magee_et_al,Performance,49.0,1895.0,2009.0
+computation_electronic_CPS,CPS,Magee_et_al,Performance,29.0,1943.0,2007.0
+electronic_computation_mips_per_$,MIPS/Cost,Magee_et_al,Performance,80.0,1943.0,2004.0
+electronic_computation_mips,MIPS,Magee_et_al,Performance,92.0,1943.0,2004.0
+camera_sensitivity_mv_micro_sqm,mv/?m^2,Magee_et_al,Performance,11.0,1987.0,2008.0
+MRI_mm_sec_$_resolution_cost,1/(res.sec.$),Magee_et_al,Price,6.0,1980.0,2006.0
+MRI_mm_sec_resolution,1/(resol*scan time),Magee_et_al,Performance,11.0,1949.0,2006.0
+CTscan_mm_scantime_resolution,1/(resol*scan time),Magee_et_al,Performance,13.0,1971.0,2006.0
+Genome_sequencing_base_pairs,BP/$,Magee_et_al,Price,8.0,1970.0,2004.0
+batteries_wh_$,Wh/$,Magee_et_al,Price,31.0,1950.0,2005.0
+batteries_wh_kg_energy_density,wh/kg,Magee_et_al,Performance,64.0,1884.0,2004.0
+batteries_wh_lit_energy_density,wh/lit,Magee_et_al,Performance,47.0,1884.0,2003.0
+capacitors_kwhr_$,Wh/$,Magee_et_al,Price,7.0,1985.0,2005.0
+capacitors_kwhr_kg,Wh/kg,Magee_et_al,Performance,12.0,1962.0,2005.0
+capacitors_kwhr_lit,Wh/Liter,Magee_et_al,Performance,14.0,1941.0,2000.0
+Flywheel_kwh_kg,kwh/kg,Magee_et_al,Performance,8.0,1975.0,2003.0
+AC_electricity_transmission_powered_distance_per_$_wkm_$,"W?Km/$, Powered distance per cost",Magee_et_al,Price,9.0,1889.0,1983.0
+AC_electricity_transmission_powered_distance_wkm,"W?Km, Powered distance",Magee_et_al,Performance,10.0,1889.0,1983.0
+DC_electricity_transmission_powered_distance_per_cost_wkm_$,"W?Km/$, Powered distance per cost",Magee_et_al,Price,20.0,1962.0,2000.0
+DC_electricity_transmission_powered_distance_wkm,"W?Km, Powered distance",Magee_et_al,Performance,23.0,1962.0,2000.0
+combustion_air_piston_engine_w_per_$,W/$,Magee_et_al,Price,13.0,1919.0,1945.0
+combustion_air_piston_engine_w_per_kg,W/kg,Magee_et_al,Performance,22.0,1919.0,1945.0
+combustion_air_piston_engine_w_per_lit,w/lit,Magee_et_al,Performance,45.0,1888.0,1945.0
+combustion_air_turbine_engine_w_per_$,W/$,Magee_et_al,Price,10.0,1963.0,2002.0
+combustion_air_turbine_engine_w_per_kg,W/kg,Magee_et_al,Performance,22.0,1963.0,2002.0
+combustion_air_turbine_engine_w_per_lit,W/lit,Magee_et_al,Performance,22.0,1955.0,2002.0
+combustion_pass_car_engine_w_per_$,W/$,Magee_et_al,Price,56.0,1896.0,1994.0
+combustion_pass_car_engine_w_per_kg,W/kg,Magee_et_al,Performance,57.0,1896.0,1994.0
+combustion_pass_car_piston_engine_w_per_lit,W/Liter,Magee_et_al,Performance,61.0,1931.0,2001.0
+electricmotor_w_per_kg_11.14.2013.xlsx,W/kg,Magee_et_al,Performance,13.0,1881.0,1993.0
+electricmotor_w_per_lit_11.14.2013.xlsx,W/Liter,Magee_et_al,Performance,16.0,1890.0,1995.0
+solar_PV_Wpeak_$,Watts per dollar,Magee_et_al,Price,35.0,1968.0,2009.0
+solar_PV_kwh_module$2011,module kwhr/2011$,Magee_et_al,Price,34.0,1977.0,2010.0
+wind_turbine_W_$,W/$,Magee_et_al,Price,23.0,1947.0,2011.0
+FuelCell_kW_$,kW/$,Magee_et_al,Price,9.0,1963.0,1996.0
+Artificial_Illumination_Incandescent_1000lumenhrs_per_$,1000 lumenhour/$,Magee_et_al,Price,11.0,1883.0,1990.0
+Artificial_Illumination_LED_lumen_$,lumen/$,Magee_et_al,Price,13.0,1972.0,2009.0
+Artificial_Illumination_LED_lumen_lamp,lumen/lamp,Magee_et_al,Performance,17.0,1967.0,2010.0
+aeroplane_transport_pass_mile_hr,Pass-miles/hr,Magee_et_al,Performance,12.0,1926.0,1975.0
+Milling_yearlyaverage_hp.accuracy,average HP/total averge accuracy,Magee_et_al,Performance,8.0,1939.0,2012.0
+3dprintingSLA_speed_buildvolume_layerthickness_cost,Speed * build volume/(layer thickness *cost),Magee_et_al,Price,5.0,1991.0,2006.0
+3dprintingSLA_speed_buildvolume_layerthickness_machinesize_cost,Speed * build volume/(layer thickness *machine size*cost),Magee_et_al,Price,5.0,1991.0,2006.0
+3dprintingSLA_speed_layerthickness_cost,Speed/(layer thickness*cost),Magee_et_al,Price,7.0,1991.0,2006.0
+3dprintingSLA_speed_layerthickness,Speed/layer thickness,Magee_et_al,Performance,6.0,1991.0,2006.0
+photolithography_arealthroughput_accuracy_cost,areal Throughput/(resolution*cost),Magee_et_al,Price,6.0,1969.0,1986.0
+photolithography_arealthroughput_accuracy,areal Throughput/accuracy,Magee_et_al,Performance,11.0,1962.0,1986.0
+photolithography_arealthroughput_cost,areal throughput/cost,Magee_et_al,Price,6.0,1969.0,1986.0
+superconductivity_critical_temperature.xlsx,deg K,Magee_et_al,Performance,15.0,1911.0,1995.0

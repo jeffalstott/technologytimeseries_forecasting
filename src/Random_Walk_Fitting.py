@@ -20,7 +20,7 @@ time_series = pd.read_csv(data_directory+'time_series.csv', index_col=0)
 time_series_metadata = pd.read_csv(data_directory+'time_series_metadata.csv', index_col=0)
 
 
-# In[6]:
+# In[61]:
 
 arma_model_code = """
 data { 
@@ -42,9 +42,9 @@ K <- sqrt( (1+theta^2) * sigma^2 );
 
 model {
 real err; 
-mu ~ normal(0,10); 
-theta ~ uniform(-1,1); //normal(0,2); 
-sigma ~ cauchy(0,5); 
+mu ~ normal(0,1); 
+theta ~ normal(0,1); //uniform(-1,1); //normal(0,2); 
+sigma ~ student_t(4, 0, 2); //cauchy(0,5); 
 err <- y[1] - 2*mu; //phi = 1
 err ~ normal(0,sigma); 
 for (t in 2:T){ 
@@ -58,10 +58,10 @@ for (t in 2:T){
 # vector[T] nu; // prediction for time t
 # vector[T] err; // error for time t
  
-# nu[1] <- mu + phi * mu; // assume err[0] == 0 
+# nu[1] <- mu + mu; // assume err[0] == 0 
 # err[1] <- y[1] - nu[1]; 
 # for (t in 2:T) { 
-#     nu[t] <- mu + phi * y[t-1] + theta * err[t-1]; 
+#     nu[t] <- mu +  y[t-1] + theta * err[t-1]; 
 #     err[t] <- y[t] - nu[t];
 #     } 
 
@@ -71,14 +71,15 @@ for (t in 2:T){
 # sigma ~ cauchy(0,5); 
 # err ~ normal(0,sigma); // likelihood
 # }
+# """
 
 
-# In[7]:
+# In[62]:
 
 arma_model = pystan.StanModel(model_code=arma_model_code)
 
 
-# In[28]:
+# In[63]:
 
 random_walk_parameters = pd.DataFrame(columns=['mu', 'K', 'theta', 'sigma'], dtype='float')
 
@@ -97,7 +98,7 @@ for col in time_series.columns:
 # random_walk_parameters = random_walk_parameters.astype('float')
 
 
-# In[29]:
+# In[64]:
 
 random_walk_parameters['mu'].hist(bins=50)
 plot((0,0), ylim(), 'k--')
@@ -113,19 +114,19 @@ random_walk_parameters['theta'].hist(bins=50)
 title("theta")
 
 
-# In[30]:
+# In[65]:
 
 random_walk_log_parameters = log(random_walk_parameters)
 
 
-# In[31]:
+# In[66]:
 
 random_walk_parameters.plot('mu', 'sigma', kind='scatter')
 figure()
 random_walk_log_parameters.plot('mu', 'sigma', kind='scatter')
 
 
-# In[32]:
+# In[67]:
 
 random_walk_parameters.plot('mu', 'K', kind='scatter')
 figure()
