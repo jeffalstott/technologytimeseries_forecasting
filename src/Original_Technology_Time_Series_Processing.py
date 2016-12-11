@@ -4,13 +4,13 @@
 # Set up
 # ===
 
-# In[107]:
+# In[20]:
 
 import pandas as pd
 data_directory = '../data/'
 
 
-# In[108]:
+# In[21]:
 
 time_series_metadata = pd.DataFrame(columns=['Units', 'Source'])
 time_series_metadata.index.name='Name'
@@ -19,7 +19,7 @@ time_series_metadata.index.name='Name'
 # Bring in Farmer and Lafond data
 # ===
 
-# In[109]:
+# In[22]:
 
 df = pd.read_csv(data_directory+'original/Farmer_Lafond_Data.csv', index_col=0)
 
@@ -40,7 +40,7 @@ for col in df.columns:
 # Manual edits
 # ----
 
-# In[110]:
+# In[23]:
 
 time_series_metadata.ix['Automotive (US)', 'Type'] = 'Performance'
 time_series_metadata.ix['Milk (US)', 'Type'] = 'Performance'
@@ -49,14 +49,14 @@ time_series_metadata.ix['Milk (US)', 'Type'] = 'Performance'
 # Bring in Magee et al data
 # ===
 
-# In[111]:
+# In[24]:
 
 from os import listdir
 from numpy import sort
 data_directories = sort(listdir(data_directory+'original/Magee_et_al_Data/'))
 
 
-# In[112]:
+# In[25]:
 
 for d in data_directories:
     if d.startswith('.'):
@@ -74,7 +74,7 @@ for d in data_directories:
             time_series_metadata.ix[col, 'Stop'] = df.dropna().index[-1]
             df.name = col
             df.index = df.index.astype('float')
-            df = df.groupby(level=0).min()
+            df = df.groupby(level=0).max()
             units = time_series_metadata.ix[col, 'Units'].lower()
             if "cost" in units or "price" in units or "usd" in units or "$" in units or "dollar" in units:
                 time_series_metadata.ix[col, 'Type'] = 'Price'
@@ -86,7 +86,7 @@ for d in data_directories:
 # Manual edits
 # ----
 
-# In[113]:
+# In[26]:
 
 time_series_metadata = time_series_metadata.rename(index={'AC_electricity_transmission_powered_distance_per_$_wkm_$':
                            'AC_electricity_transmission_powered_distance_per_cost_wkm_$'})
@@ -98,7 +98,7 @@ time_series = time_series.rename(columns={'AC_electricity_transmission_powered_d
 # Convert Performance to Non-Dominated Values
 # ====
 
-# In[114]:
+# In[27]:
 
 for tech in time_series.columns:
     if time_series_metadata.ix[tech, 'Type'] == 'Performance':
@@ -106,13 +106,13 @@ for tech in time_series.columns:
         time_series_metadata.ix[tech, 'n'] = time_series[tech].notnull().sum()
 
 
-# In[115]:
+# In[ ]:
 
 time_series.to_csv(data_directory+'time_series.csv')
 time_series_metadata.to_csv(data_directory+'time_series_metadata.csv')
 
 
-# In[116]:
+# In[ ]:
 
 get_ipython().magic('pylab inline')
 
@@ -123,17 +123,17 @@ for c in time_series.columns:
     title(c)
 
 
-# In[117]:
+# In[ ]:
 
 time_series_metadata[time_series_metadata['Source']=='Farmer_Lafond'].shape
 
 
-# In[118]:
+# In[ ]:
 
 time_series_metadata[time_series_metadata['Source']=='Magee_et_al'].shape
 
 
-# In[119]:
+# In[ ]:
 
 sum(time_series_metadata[time_series_metadata['Source']=='Magee_et_al']['n']>10)
 
