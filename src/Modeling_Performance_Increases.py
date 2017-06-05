@@ -874,9 +874,9 @@ ylabel("p(lpd(Bernoulli*Normal)>lpd(Lognormal))")
 # Use Models to Predict Future Performance
 # ===
 
-# In[164]:
+# In[194]:
 
-target_tech_names = metadata.ix[metadata['Type']=='Price', 'Name']
+target_tech_names = metadata.ix[(metadata['Type']=='Price')*(metadata['Source']=='Magee_et_al'), 'Name']
 print("%i technologies"%target_tech_names.shape[0])
 
 empirical_time_series = log(empirical_data[target_tech_names])
@@ -902,12 +902,13 @@ price_technology_forecast_models_parameters = {}
 price_technology_forecast_models_95CI = {}
 
 
-# In[ ]:
+# In[195]:
 
-for model_name in [#'price~N(mu,sigma)', 
-                   'price~t(nu,mu,sigma)',
+for model_name in ['price~N(mu,sigma)', 
+#                    'price~t(nu,mu,sigma)',
                    'price~N(mu,sigma), hierarchical', 
-                   'price~t(nu,mu,sigma), hierarchical']:
+#                    'price~t(nu,mu,sigma), hierarchical'
+                    ]:
     if 'improvement' in model_name:
         continue
     print(model_name)
@@ -919,6 +920,87 @@ for model_name in [#'price~N(mu,sigma)',
                        technology_forecast_models_parameters=price_technology_forecast_models_parameters,
                        technology_forecast_models_95CI=price_technology_forecast_models_95CI,
                        target_tech_names=target_tech_names)
+
+
+# In[210]:
+
+technology_models_fit_parameters['improvement~N(mu,sigma), hierarchical'].T.plot('mu', 'sigma', kind='scatter')
+
+
+# In[214]:
+
+dist_mean = lambda df: norm(loc=df['mu'], scale=df['sigma']).mean()
+dist_entropy = lambda df: norm(loc=df['mu'], scale=df['sigma']).entropy()
+x = technology_models_fit_parameters['improvement~N(mu,sigma), hierarchical'].apply(dist_mean)
+y = technology_models_fit_parameters['improvement~N(mu,sigma), hierarchical'].apply(dist_entropy)
+scatter(y,x, label='Hierarchy')
+
+# x = technology_models_fit_parameters['improvement~N(mu,sigma)'].apply(dist_mean)
+# y = technology_models_fit_parameters['improvement~N(mu,sigma)'].apply(dist_entropy)
+# scatter(x,y, label='No Hierarchy', color='red')
+# xscale('log')
+# xlim(xmin=x.min())
+yscale('log')
+ylim(ymin=x.min())
+
+
+# In[196]:
+
+### Magee et al.
+q = pd.Panel4D(price_technology_forecast_models_log_pd)#.drop(problem_techs,axis=1)
+for i in arange(q.shape[2]):
+    q.mean(axis=1).iloc[:,i].plot()
+    title('Predicting '+str(q.major_axis[i])+' years forward')
+    ylabel('mean log(probability density)\nof future observations')
+    xlabel('Model trained up until this year')
+    yscale('symlog')
+    legend(loc='best')
+    
+# q = pd.Panel4D(technology_forecast_models_log_pd)
+# for i in q.labels:
+#     q[i].mean(axis=0).T.plot()
+#     title(i)
+#     ylabel('mean log(probability density)\nof future observations')
+#     xlabel('Model trained up until this year')    
+
+
+# In[193]:
+
+### Farmer and Lafond
+q = pd.Panel4D(price_technology_forecast_models_log_pd)#.drop(problem_techs,axis=1)
+for i in arange(q.shape[2]):
+    q.mean(axis=1).iloc[:,i].plot()
+    title('Predicting '+str(q.major_axis[i])+' years forward')
+    ylabel('mean log(probability density)\nof future observations')
+    xlabel('Model trained up until this year')
+    yscale('symlog')
+    legend(loc='best')
+    
+# q = pd.Panel4D(technology_forecast_models_log_pd)
+# for i in q.labels:
+#     q[i].mean(axis=0).T.plot()
+#     title(i)
+#     ylabel('mean log(probability density)\nof future observations')
+#     xlabel('Model trained up until this year')    
+
+
+# In[189]:
+
+q = pd.Panel4D(price_technology_forecast_models_log_pd)#.drop(problem_techs,axis=1)
+for i in arange(q.shape[2]):
+    q.mean(axis=1).iloc[:,i].plot()
+    title('Predicting '+str(q.major_axis[i])+' years forward')
+    ylabel('mean log(probability density)\nof future observations')
+    xlabel('Model trained up until this year')
+    yscale('symlog')
+    legend(loc='best')
+    
+# q = pd.Panel4D(technology_forecast_models_log_pd)
+# for i in q.labels:
+#     q[i].mean(axis=0).T.plot()
+#     title(i)
+#     ylabel('mean log(probability density)\nof future observations')
+#     xlabel('Model trained up until this year')    
 
 
 # In[167]:
@@ -946,7 +1028,7 @@ fl = metadata[(metadata['Source']=='Farmer_Lafond')*(metadata['Type']=='Price')]
 mea = metadata[(metadata['Source']=='Magee_et_al')*(metadata['Type']=='Price')]['Name'].values
 
 
-# In[186]:
+# In[190]:
 
 q = pd.Panel4D(price_technology_forecast_models_log_pd)#.drop(problem_techs,axis=1)
 for i in arange(q.shape[2]):
