@@ -1,25 +1,7 @@
-# technologytimeseries
+# technologytimeseries_forecasting
 
+This is the code behind the report ["Forecasting Technology Performance: Initial Tests with Time Series Extrapolation and Patent Data"](https://github.com/jeffalstott/technologytimeseries_forecasting/blob/master/manuscript/Forecasting%20Technology%20Performance-Initial%20Tests%20with%20Time%20Series%20Extrapolation%20and%20Patent%20Data.pdf), written for IARPA.
 
+The `data` directory has the raw data, the `manuscript` directory has the `LaTeX` code and figures that created the manuscript, and the `src` directory has the source code. The source code is embarassingly disorganized, because it is primarily code that was written during the exploratory phases of the research, not the final production code. The production code that was actually used for the manuscript is [Manuscript_Figures.ipynb](https://github.com/jeffalstott/technologytimeseries_forecasting/blob/master/src/Manuscript_Figures.ipynb). Everything else is kept for posterity. Feel free to reach out to the author if you've questions/comments/concerns/stories. 
 
-
-Two Projects (Could be separate papers)
-----
-- Data Science 
-- Science
-
-
-Data Science
-----
-- Replicate with maximum likelihood
-- Replicate with Bayes
-- Test with additional data set (from Benson and Magee)
-- Group parameters (this is the relationship for the Science (see below) )
-- Group level predictors? (e.g. genomics vs. chemicals vs. energy vs. …. ; price vs. non-price)
-- Box-Cox transformation?
-- ...
-
-Science
-----
-- Model relationship between speed and variability
-- Do all the simulations that possibly explain speed and variability
+_This research is based upon work supported in part by the Office of the Director of National Intelligence (ODNI), Intelligence Advanced Research Projects Activity (IARPA). The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of ODNI, IARPA, or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for governmental purposes notwithstanding any copyright annotation therein._
